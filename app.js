@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
          
             for (var i=0; i<items.length; i++) {
                 console.log(typeof items[i]);
-                html+=`<a href="/download?id=${items[i]}">kbjbjbhj</a><br /><br />`
+                html+=`<a href="/download?id=${items[i]}">${items[i]}  </a><br /><br />`
             }
             html += `<p>Welcome</p>
     </body>
@@ -46,7 +46,7 @@ app.get('/', (req, res) => {
     // res.end(html);
 })
 app.get('/download', function(req, res){
-    const file = `${__dirname}/'/storage/downloads/movies'/${req.query.id}`;
+    const file = `${__dirname}/storage/downloads/movies/${req.query.id}`;
     res.download(file); // Set disposition and send it.
   });
 // app.get('/:id/download', function (req, res, next) {
