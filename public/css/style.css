@@ -1,0 +1,17 @@
+.standard:hover {
+    background-color: #0099cc;
+    cursor: pointer;
+  }
+
+  .subject:hover {
+    background-color: #0099cc;
+    cursor: pointer;
+  }
+
+  .topic:hover {
+    cursor: pointer;
+  }
+
+  .inactive{
+      display: none;
+  }

@@ -32,28 +32,35 @@ $(function () {
 });
 
 
-$('div .standards').click(function(e) {
+$('div .standard').click(function(e) {
     e.preventDefault();
     var parentId = $(this).closest('div').prop('id');
     $('.standards').addClass('inactive');
-    $('.subject').removeClass('inactive')
-    $('.subject').addClass('active')
+    $('.subjects').removeClass('inactive')
+    $('.subjects').addClass('active')
+    $('.arrow').removeClass('inactive')
+    $('.arrow').addClass('active')
+    $('.arrow.left').attr('data-action', 1);
 });
 
+$('div .subjects').click(function(e) {
+    e.preventDefault();
+    var parentId = $(this).closest('div').prop('id');
+    $('.subjects').addClass('inactive');
+    $('.topics').removeClass('inactive')
+    $('.topics').addClass('active')
+    $('.arrow').removeClass('inactive')
+    $('.arrow').addClass('active')
+    $('.arrow.left').attr('data-action', 'subjects');
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$('.arrow.left').click(function(e) {
+    e.preventDefault();
+    console.log($(this).attr('data-action'))
+    $element = $(this).attr('data-action');
+    $('.subject').addClass('active');
+    $('.standards').removeClass('inactive')
+    $('.standards').addClass('active')
+    $('.arrow').removeClass('active')
+    $('.arrow').addClass('inactive')
+})

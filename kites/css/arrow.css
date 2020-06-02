@@ -1,0 +1,20 @@
+.arrow {
+    --color: #fff;
+    --duration: .3s;
+    --ripple-duration: .4s;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size:48px;
+    color:red;
+}
+
+.right{
+    float: right;
+}
