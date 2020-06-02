@@ -1,0 +1,30 @@
+
+.login .top-content .inner-bg .container{
+    left: 0%;
+}
+
+.login p{
+    font-size: 1.25rem;
+}
+
+.login input{
+    width: 70%;
+}
+
+
+.login #login{
+    margin-top: 1%;
+    background-color: mediumblue;
+    color: white
+}
+
+.login #newUser{
+    margin-top: 1%;
+    background-color: #009900;
+    color: white
+}
+
+.alert{
+    width: 70%;
+    display: none;
+}

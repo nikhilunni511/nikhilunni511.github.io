@@ -1,0 +1,110 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+
+.main-content .col-md-1{
+    background-color: pink;
+    float: left;
+    display: inline;
+}
+#main-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container{
+      max-width: 90%;
+      margin-top: 60px;
+  }
+
+  .main-content .col-md-1:hover {
+    background-color: #0099cc;
+    cursor: pointer;
+  }
+  @media only screen and (min-width: 970px) {
+    .main-content .col-md-1{
+        width: 20%;
+        height: 150px;
+        background-color: pink;
+        margin: 0 16px 25px 24px;
+    }
+    #main-row{
+        margin: 50px 10px 10px 10px;
+    }
+}
+
+
+    @media only screen and (max-width: 970px) {
+        .main-content .col-md-1{
+            width: 20%;
+            height: 155px;
+            background-color: pink;
+            margin: 0 31px 39px 8px;
+        }
+        #main-row{
+            margin: 50px 10px 10px 10px;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .main-content .col-md-1{
+            width: 35%;
+            height: 155px;
+            background-color: pink;
+            margin: 0 31px 35px 33px;
+        }
+        #main-row{
+            margin: 50px 10px 10px 10px;
+        }
+      }
+
+      .active{
+          display: grid;
+      }
+      .inactive{
+          display: none;
+      }
+
+      .well{
+          margin-top: 20px;
+      }
+
+      .cards {
+        max-width: 1200px;
+        margin: 40px auto;
+        grid-gap: 1rem;
+      }
+
+      .card {
+        background-color: dodgerblue;
+        color: white;
+        padding: 1rem;
+        height: 17rem;
+      }
+      .card:hover {
+        background-color: #0099cc;
+        cursor: pointer;
+      }
+      /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cards { grid-template-columns: repeat(1, 1fr); }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .cards { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .cards { grid-template-columns: repeat(5, 1fr); }
+}
