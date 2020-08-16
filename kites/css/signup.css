@@ -1,0 +1,193 @@
+.topbar {
+   
+    /* left: 0;
+    right: 0;
+    z-index: 15;
+    
+   
+   
+    border-bottom: 1px solid #294c7b; */
+    padding: 6px 26px;
+    background: black;
+    height: 42px;
+    
+  }
+   .topbar .right-group {
+    float: right;
+  }
+  .topbar .right-group .notification-group {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+  }
+  .topbar .right-group .notification-group .link-group a {
+    margin: 0;
+    border: 0;
+  }
+  .topbar .right-group .notification-group a {
+    color: #17253c;
+    font-size: 21px;
+  }
+  .topbar .right-group .notification-group a:hover {
+    color: #111;
+    background: transparent;
+  }
+  .topbar .right-group .link-group {
+    position: relative;
+    top: -4px;
+    display: inline-block;
+    padding: 0;
+  }
+  .topbar .right-group .link-group a {
+    padding: 9px 8px;
+    color: #fff;
+    font-size: 12px;
+  }
+  .topbar .right-group .link-group a img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+  }
+  .topbar .right-group .link-group a:hover {
+    background: #355486;
+    text-decoration: none;
+  }
+
+  .topbar .right-group .link-group .menu {
+    padding: 9px 8px;
+    color: #fff;
+    font-size: 12px;
+  }
+  .topbar .right-group .link-group .menu img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+  }
+
+  
+  .topbar .right-group .link-group:nth-child(2) a {
+    margin-right: 16px;
+    border-left: 1px solid black;
+  }
+  
+  .topbar .right-group .link-group:nth-child(4) a {
+    margin-left: 16px;
+    border-left: 1px solid black;
+  }
+
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.link-group:hover .dropdown-content {display: block;}
+
+
+
+  .topbar .search-box {
+    display: inline-block;
+    width: calc(100vw - 72%);
+  }
+  .topbar .search-box .input-group * {
+    font-size: 12px;
+    height: 25px;
+    border: 1px solid #fff;
+    background: #fff;
+    outline: 0;
+  }
+  .topbar .search-box .input-group button {
+    color: #7a7a7a;
+    -webkit-transition: all ease 150ms;
+    transition: all ease 150ms;
+  }
+  .topbar .search-box .input-group button:hover {
+    color: #000;
+  }
+
+
+  .reg{
+    background-color: white;
+    
+}
+.reg> .container{
+    width: 50%;
+    left: auto;
+    
+    
+}
+
+#message {
+    float: left;
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    left: 10px;
+    width: fit-content;
+    height: fit-content
+}
+
+#message p {
+    padding: 0px 35px;
+    font-size: 12px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: '\2713';
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: '\274C';
+}
+
+
+#alertbox {
+    display: none;
+}
+
+
+
+.reg input:invalid:focus + span:after {
+    content: '✖';
+    color: #f00;
+    padding-left: 5px;
+}
+
+.reg input:valid + span:after {
+    content: '✓';
+    color: #26b72b;
+    padding-left: 5px;
+}
+  
