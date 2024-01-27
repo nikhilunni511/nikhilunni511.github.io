@@ -1,190 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <title> Nikhil Unni, Software Developer</title>
-    <link rel="stylesheet" href="stylesheets/styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.xml" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page Design Neumorphism Effect</title>
+    <!--=================-Fontawesome icon-============================-->
+    <link rel="stylesheet" href="/css/Fontawesome.css">
+    <!--=================-Google Fonts Poppins-============================-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-...your-sha512-hash-here..." crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--[if lt IE 9]>
-  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <link rel="stylesheet" href="style.css">
+
 
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>
-                <a href="index.html">Nikhil Unni V P</a>
-            </h1>
-            <p class="print-hidden">Software Developer</p>
-            <ul class="clearfix">
-                <li class="tablinks active" onclick="openProfileTab(event, 'resume')">
-                    <a>Resume</a>
-                </li>
-                <li class="tablinks" onclick="openProfileTab(event, 'blog')">
-                    <a>Blog</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://github.com/nikhilunni511">Github</a>
-                </li>
-            </ul>
-        </header>
-        <section class="content profileTabs" id="content-blog">
-            <h3>Latest entries</h3>
-            <ul class="entries">
+    <section>
 
+        <div class="container">
+            <div class="caption">
+                <div class="mobile-menu">
+                    <ul class="nav navbar-nav mob-links">
+                        <li onclick="navigateTo('home')">Home</li>
+                        <li onclick="navigateTo('tech')">Tech</li>
+                        <!-- <li>Projects</li> -->
+                        <!-- <li>About Me</li> -->
+                        <!-- <li>Testimonial</li> -->
+                    </ul>
+                </div>
+                <nav class="navbar">
 
-                <li>
-                    <h2>
-                        <a target="_blank" href="https://medium.com/@nikhi.unni/create-a-apollo-server-using-graphql-dev-efbc87b34708">How to setup a simple Apollo-server using graphql-dev</a>
-                    </h2>
-                    April 18, 2020
-                </li>
+                    <div class="header">
 
+                        <div class="navbar-header">
+                            <a class="logo" href="https://www.linkedin.com/in/nikhilunni511/" target="_blank"><i
+                                    class="fab fa-linkedin" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="m_button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="nav navbar-nav mob-links">
+                            <li onclick="navigateTo('home')">Home</li>
+                            <li onclick="navigateTo('tech')">Tech</li>
+                            <!-- <li>Projects</li> -->
+                            <!-- <li>About Me</li> -->
+                            <!-- <li>Testimonial</li> -->
+                        </ul>
 
-            </ul>
+                        <!-- <ul class="nav navbar-nav Contact">
+                            <li><a href="#"><i class="fa fa-lock"></i>Login</a></li>
+                            <li class="sign"><a href="#">Schedule a call</a></li>
+                        </ul> -->
 
-        </section>
+                    </div>
 
-        <section class="content profileTabs" id="content-resume">
-            <div style="display: flex;">
-                <h1 class="print-hidden">Resume</h1>
-                <a href="./NIKHIL_UNNI.pdf" target="=" _blank style="color: black">
-                    <i style="padding: 11px 0 0 10px" class="fa fa-download"></i>
-                </a>
+                </nav>
+
+                <div id="homeContent" class="main home">
+                    <div class="content">
+                        <h1> Hello<span>!</span></h1>
+                        <h2>I'm a <span>Software Developer</span>.</h2>
+                        <span>It is a well-known truth that users will be immersed in the seamless functionality of an
+                            application
+                            when they interact with its well-crafted code.</span>
+                        <div class="profile-links">
+                            <div class="social">
+                                <div class="btn"><button href="#">Hire me</button></div>
+                                <div class="btn"><button onclick="downloadFile('/NIKHIL_UNNI.pdf')">Download CV</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/office.svg">
+                    </div>
+                </div>
+
+                <div id="techContent" class="main tech">
+                    <div class="tech-list">
+                        <img class="tech-image" src="/img/tech/nodejs.svg">
+                        <img class="tech-image" src="/img/tech/react.svg">
+                        <img class="tech-image" src="/img/tech/mongodb.svg">
+                        <img class="tech-image" src="/img/tech/aws.svg">
+                        <img class="tech-image" src="/img/tech/circleci.svg">
+                        <img class="tech-image" src="/img/tech/docker.svg">
+                        <img class="tech-image" src="/img/tech/css.png">
+                        <img class="tech-image" src="/img/tech/express.svg">
+                        <img class="tech-image" src="/img/tech/html5.svg">
+                        <img class="tech-image" src="/img/tech/js.svg">
+                        <img class="tech-image" src="/img/tech/kubernetes.svg">
+                        <img class="tech-image" src="/img/tech/mysql.svg">
+                        <img class="tech-image" src="/img/tech/nginx.svg">
+                        <img class="tech-image" src="/img/tech/opencv.svg">
+                        <img class="tech-image" src="/img/tech/php.svg">
+                        <img class="tech-image" src="/img/tech/python.svg">
+                        <img class="tech-image" src="/img/tech/psql.svg">
+                        <img class="tech-image" src="/img/tech/react.svg">
+                        <img class="tech-image" src="/img/tech/redis.svg">
+                        <img class="tech-image" src="/img/tech/redux.svg">
+                        <img class="tech-image" src="/img/tech/sass.svg">
+                        <img class="tech-image" src="/img/tech/tensorflow.svg">
+                        <img class="tech-image" src="/img/tech/ts.svg">
+                        <img class="tech-image" src="/img/tech/webpack.svg">
+                        <img class="tech-image" src="/img/tech/webrtc.svg">
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="media">
+                        <h2>Follow with me</h2>
+                        <div class="social">
+                            <div><a href="https://github.com/nikhilunni511" target="_blank"><i
+                                        class="fab fa-github"></i></a></div>
+                            <div><a href="https://stackoverflow.com/users/9559804/nikhil-unni" target="_blank"><i
+                                        class="fab fa-stack-overflow"></i></a></div>
+                            <div><a href="mailto:nikhi.unni@gmail.com" target="_blank"><i
+                                        class="fa fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </div>
 
-            <p class="print-hidden">
-                <em>References available upon request. Email me at
-                    <a target="_blank" href="mailto:nikhi.unni@gmail.com">nikhi.unni@gmail.com</a>
-                </em>
-            </p>
-
-            <h2>Experience</h2>
-
-            <h3>Senior Software Engineer
-                <a target="_blank" href="https://www.emvigotech.com/">Emvigo Technologies</a>
-                <small>Dec 2020&ndash;Present</small>
-            </h3>
-
-            <h3>Software Engineer
-                <a target="_blank" href="https://www.qburst.com/">QBurst Technologies</a>
-                <small>Apr 2018&ndash;Dec 2020</small>
-            </h3>
-
-            <ul>
-                <li>Designed and implemented a SOA microservice with a JSON HTTP REST API.</li>
-                <li>Designed and implemented GraphQL schema to communicate REST API server and front-end application.</li>
-                <li>Wrote unit tests for new database models and controllers.</li>
-            </ul>
+    </section>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(".m_button").click(function () {
+            $('body').toggleClass("active");
+        });
 
 
+        const btn = document.querySelector('.m_button');
+        const nav = document.querySelector('.nav');
+        btn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        })
+    </script>
+    <script>
+        function navigateTo(route) {
+            // Hide all main content divs
+            document.querySelectorAll('.main').forEach(function (element) {
+                element.style.display = 'none';
+            });
 
-            <h3>Software Engineer
-                <a>Intellect TechnoMedia</a>
-                <small>May 2017&ndash;Apr 2018</small>
-            </h3>
+            // Show the corresponding content based on the route
+            switch (route) {
+                case 'home':
+                    document.getElementById('homeContent').style.display = 'flex';
+                    document.getElementById('techContent').style.display = 'none';
+                    break;
+                case 'tech':
+                    document.getElementById('techContent').style.display = 'flex';
+                    document.getElementById('homeContent').style.display = 'none';
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+    <script>
+        function downloadFile(filePath) {
+            // Create a link element
+            var link = document.createElement('a');
 
-            <ul>
-                <li>Designed and implemented a SOA microservice with a JSON HTTP REST API.</li>
-                <li>Implemented a TOTP (Time-Based One-Time Password)-based system including database schema design, HTTP request
-                    handling, and pages presented to users</li>
-            </ul>
+            // Set the href attribute to the file path
+            link.href = filePath;
 
+            // Add the download attribute to prompt the browser to download the file
+            link.download = filePath.split('/').pop();
 
-            <h2>Highlighted Open-Source Contributions
-                <!-- (
-                <a target="_blank" href="https://github.com/pulls?page=1&amp;q=author%3Anikhilunni511+is%3Apublic+is%3Aclosed+-user%3Anikhilunni511&amp;utf8=%E2%9C%93">See all</a>) -->
-            </h2>
-            <ul>
-                <li>
-                    <a target="_blank" href="https://github.com/nikhilunni511/graphql-dev#readme">graphql-dev</a>: CLI tool for creating a running Apollo-Server</li>
-                <li>
-                    <a target="_blank" href="https://github.com/cjlarose/argon2-ffi/pull/41">argon2-ffi#41</a>: Add Typescript compatability</li>
-                <li>
-                    <a target="_blank" href="https://github.com/renderforest/renderforest-sdk-node/pull/201">renderforest-sdk-node#201:</a>: Add Typescript compatability</li>
-            </ul>
+            // Append the link to the document
+            document.body.appendChild(link);
 
-            <h2>Personal Projects</h2>
-            <ul>
-                <li>
-                    <a target="_blank" href="">FIRSTBELL ONLINE</a>: React Native, Javascript, CSS, Laravel, MySQL</li>
-                <li>
-                    <a target="_blank" href="">CHAIN BREAK DIARY</a>: React Native, Javascript, NodeJS, PostgreSQL</li>
-                <li>
-                    <a target="_blank" href="">graphql-dev</a>: CLI tool for creating a running Apollo-Server</li>
-            </ul>
+            // Trigger a click on the link to start the download
+            link.click();
 
-            <h2>Technologies</h2>
-            <ul>
-                <li>
-                    <strong>Languages:</strong> JavaScript, TypeScript, GraphQL, PHP, HTML</li>
-                <li>
-                    <strong>Frameworks & Libraries:</strong> NodeJS, ExpressJS, LoopBack, Apollo Server, ReactJS, Laravel, jQuery</li>
-                <!-- <li>
-                    <strong>Services:</strong> Amazon Web Services SQS, S3, EC2, ELB</li> -->
-                <li>
-                    <strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
-                <li>
-                    <strong>Unit Testing:</strong> Mocha, Chai, Jest</li>
-            </ul>
+            // Remove the link from the document
+            document.body.removeChild(link);
+        }
+    </script>
 
-            <h2>Certifications</h2>
-            <ul>
-                <li>
-                    <a target="_blank" href="https://coursera.org/share/0e1b21c73c84aa620235eddd61164902" target="_blank">Deep Learning Specialization</a>
-                </li>
-            </ul>
-
-            <h2>Education</h2>
-            <h3>University of Calicut
-                <small>Jul 2013&ndash;May 2017</small>
-            </h3>
-
-            <p>Completed Bachelor's of Engineering in Computer Science and Engineering.
-            </p>
-
-            <h3>APJ Abdul Kalam Technological University
-                <small>Aug 2017&ndash;May 2019</small>
-            </h3>
-
-            <p>Completed Master's of Engineering in Computer Science and Engineering.
-            </p>
-
-        </section>
-        <footer>
-            <div class="social_media">
-                <a class="social_link" href="https://www.linkedin.com/in/nikhilunni511/" target="_blank">
-                    <div class="social_icon" id="linkedin">
-                        <i class="fa fa-linkedin-square"></i>
-                    </div>
-                </a>
-                <a class="social_link" href="https://github.com/nikhilunni511/" target="_blank">
-                    <div class="social_icon" id="github">
-                        <i class="fa fa-github"></i>
-                    </div>
-                </a>
-                <!-- <a class="social_link" href="https://www.linkedin.com/in/nikhilunni511/" target="_blank">
-                    <div class="social_icon" id="skype">
-                        <i class="fa fa-skype"></i>
-                    </div>
-                </a> -->
-                <a class="social_link" href="https://stackoverflow.com/users/9559804/nikhil-unni" target="_blank">
-                    <div class="social_icon" id="stackoverflow">
-                        <i class="fa fa-stack-overflow"></i>
-                    </div>
-                </a>
-            </div>
-        </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    <script src="javascripts/index.js"></script>
 </body>
 
 </html>
