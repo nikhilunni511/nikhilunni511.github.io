@@ -640,13 +640,15 @@ img
         background: linear-gradient(-85deg,
      rgb(79, 197, 253) -81%, 
      rgb(61,55,239));
+     display: flex;
+    flex-direction: column;
     }
    
 
     .m_button
     {
         opacity: 1;
-        margin-left: 203px;
+        /* margin-left: 203px; */
         width: 55px;
         height: 55px;
     }
@@ -710,8 +712,6 @@ img
     .footer .media div
     {
         margin: 0 6px;
-        width: 35px;
-        height: 35px;
     }
     .social div
     {
@@ -818,21 +818,22 @@ img
     .nav.active
     {
         position: absolute;
-        display: block;
+        display: flex;
         background: #3e3def;
-        padding: 57px 96px !important;
+        /* padding: 57px 96px !important;
         margin-left: -55px !important;
-        margin-top:51px !important; 
+        margin-top:51px !important;  */
     }
+    
 
 
 
 
     .main .content
     {
-        margin-left: -27px;
+        /* margin-left: -27px;
         margin-top:5px;
-        width:225%;
+        width:225%; */
 
     }
   
@@ -847,8 +848,8 @@ img
     }
     .main .image
     {
-        margin-top:-178px;
-        margin-left:-138px !important;
+        /* margin-top:-178px;
+        margin-left:-138px !important; */
     }
     img
     {
