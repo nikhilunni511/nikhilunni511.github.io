@@ -23,8 +23,6 @@ section
     width: 100%;
     min-height: 100vh;
     display: flex;
-    display: -webkit-box;
-    display: -webkit-flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -40,8 +38,6 @@ section
      border-radius: 10px;
      overflow: hidden;
      display: flex;
-     display: -webkit-flex;
-     display: -webkit-box;
      flex-wrap: wrap;
      justify-content: space-between;
      box-shadow: 2px 2px 4px rgba(0,0,0,0.205),
