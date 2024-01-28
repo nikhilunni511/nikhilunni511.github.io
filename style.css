@@ -579,7 +579,7 @@ img
     }
 
     .mobile-menu {
-        width: 100%;
+        width: 95%;
         height: 400px;
         position: absolute;
         display: flex;
@@ -636,7 +636,7 @@ img
 {
     .caption
     {
-        width: 1258px;
+        width: 100%;
         background: linear-gradient(-85deg,
      rgb(79, 197, 253) -81%, 
      rgb(61,55,239));
@@ -742,15 +742,16 @@ img
     .nav.active
     {
         position: absolute;
-        display: block;
         background: #3e3def;
         padding: 88px 116px;
-        margin-left: -54px;
-        margin-top:54px;
+        margin-left: 0px;
+        margin-top:75px;
         border-radius: 18px;
         box-shadow: 2px 2px 4px rgba(0,0,0,0.205),
            -3px -3px 7px rgba(255,255,255,0.15);
-        z-index:1;   
+        z-index:1;  
+        display: flex; 
+        align-items: center;
     }
 
 
@@ -794,7 +795,7 @@ img
 {
     .caption
     {
-        width: 1258px;
+        width: 100%;
         background: linear-gradient(-85deg,
      rgb(79, 197, 253) -81%, 
      rgb(61,55,239));
