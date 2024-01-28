@@ -598,7 +598,7 @@ img
         flex-direction: column;
         text-align: center;
         background: #3e3def;
-        padding: 88px 124px;
+        padding: 88px 0px;
         margin-top:62px;
         border-radius: 18px;
         box-shadow: 2px 2px 4px rgba(0,0,0,0.205),
@@ -690,8 +690,8 @@ img
     }
     .main .image
     {
-        margin-top:-182px;
-        margin-left:-220px;
+        /* margin-top:-182px; */
+        /* margin-left:-220px; */
     }
     img
     {
@@ -770,7 +770,7 @@ img
     }
     .main .image
     {
-        margin-left:-192px;
+        /* margin-left:-192px; */
     }
    
    .footer
