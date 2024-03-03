@@ -443,6 +443,11 @@ img
     inset -3px -3px 3px rgba(255,255,255,0.089);
 }
 
+.social a {
+    text-decoration: none;
+    color: #fff;
+}
+
 
 
 
